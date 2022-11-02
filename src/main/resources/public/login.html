@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login </title>
+    <link rel="stylesheet" href="styles/login.css">
+    <title>Title</title>
 </head>
-
 <body>
-    <div class="container">
-        
-    <h1>Login</h1>
-
-    <form action="/action_page.php">
-        <label for="fname">User name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Password:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <input type="button" value="Submit" onclick="location.href='index.html';">
-    </form>
+<div class="wrapper">
+  <div class="logo">
+    <img src="../../../../img/logos.png" alt="">
+  </div>
+  <div class="text-center mt-4 name">
+    Arep
+  </div>
+  <form class="p-3 mt-3">
+    <div class="form-field d-flex align-items-center">
+      <span class="far fa-user"></span>
+      <input type="text" name="userName" id="username" placeholder="Username">
     </div>
+    <div class="form-field d-flex align-items-center">
+      <span class="fas fa-key"></span>
+      <input type="password" name="password" id="pwd" placeholder="Password">
+    </div>
+    <button onclick="Client.login()" class="btn mt-3">Login</button>
+  </form>
+</div>
 </body>
-
+<script type="text/javascript" src="js/Client.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
 </html>

@@ -37,4 +37,13 @@ public class User {
     public void setPsw(String psw) {
         this.psw = psw;
     }
+
+    public CharSequence getPassword() {
+        return "a";
+    }
+
+    public Object getEmail() {
+        Object object = null;
+        return object;
+    }
 }
